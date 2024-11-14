@@ -31,7 +31,7 @@
       "@/*": ["src/*"]
     }
   },
-  "types": ["@types/gtag.js"],
+  "types": ["@types/gtag.js", "node", "jest", "@testing-library/jest-dom"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
