@@ -20,6 +20,7 @@ yarn-error.log*
 *.sqlite3
 dump.rdb
 *.sql
+/src/data/mock.js
 
 # OS 및 편집기 관련 파일
 .DS_Store
