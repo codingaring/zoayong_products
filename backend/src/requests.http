@@ -1,1 +1,5 @@
 GET http://localhost:3000/products
+
+###
+
+GET http://localhost:3000/products?sort=asc&count=3
