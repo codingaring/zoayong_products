@@ -3,6 +3,7 @@
 npm-debug.log
 yarn-debug.log*
 yarn-error.log*
+/*.http
 
 # 환경 변수 파일
 .env.local
