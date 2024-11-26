@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import Product from "./models/Product.js";
 import { fileURLToPath } from "url";
 import path from "path";
+import cors from "cors";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,6 +17,14 @@ mongoose
   .catch((error) => console.error("Connection error", error));
 
 const app = express();
+
+const corsOptions = {
+  origin: ["http://localhost:3000"],
+};
+
+// app.use(cors(corsOptions));
+
+app.use(cors());
 app.use(express.json());
 
 function asyncHandler(handler) {
