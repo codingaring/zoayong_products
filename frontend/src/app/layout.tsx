@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import '@styles/globals.css';
+import { GmarketSans } from '@styles/fonts';
 
 export const metadata: Metadata = {
   title: '조아용in스토어 상품 소개서',
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body className={GmarketSans.className}>{children}</body>
     </html>
   );
 }
