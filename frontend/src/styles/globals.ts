@@ -100,14 +100,11 @@ export const globalCSS = css`
     font-size: 62.5%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    background-color: var(--background);
-    color: var(--gray900);
   }
 
   body {
     line-height: 1;
     font-size: 1.6rem;
-    font-family: var(--font-noto-sans);
   }
 
   article,
