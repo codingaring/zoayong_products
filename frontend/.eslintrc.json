@@ -17,7 +17,7 @@
     "sourceType": "module",
     "requireConfigFile": false
   },
-  "plugins": ["react", "@typescript-eslint", "import", "@emotion", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "import", "prettier"],
   "ignorePatterns": ["!**/.storybook/*"],
   "rules": {
     "import/order": [

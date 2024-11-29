@@ -1,0 +1,99 @@
+:root {
+  /** colors **/
+  --color-black: #000;
+  --color-white: #fff;
+
+  /** gray variant */
+  --color-gray-150: #171717;
+  --color-gray-140: #242424;
+  --color-gray-130: #333333;
+  --color-gray-120: #3d3d3d;
+  --color-gray-110: #555555;
+  --color-gray-100: #6f6f6f;
+  --color-gray-90: #8b8b8b;
+  --color-gray-80: #a5a5a5;
+  --color-gray-70: #c1c1c1;
+  --color-gray-60: #dfdfdf;
+  --color-gray-50: #ececec;
+  --color-gray-40: #efefef;
+  --color-gray-30: #f5f4f3;
+  --color-gray-20: #f7f7f7;
+  --color-gray-10: #fbfbfb;
+
+  /** warm gray variant */
+  --color-warm-gray-150: #221e1a;
+  --color-warm-gray-140: #2f2c2b;
+  --color-warm-gray-130: #3a393d;
+  --color-warm-gray-120: #424144;
+  --color-warm-gray-110: #575553;
+  --color-warm-gray-100: #716d68;
+  --color-warm-gray-90: #8e8a83;
+  --color-warm-gray-80: #a7a39a;
+  --color-warm-gray-70: #c2bfb8;
+  --color-warm-gray-60: #dcd9d3;
+  --color-warm-gray-50: #e3e1db;
+  --color-warm-gray-40: #ebe9e4;
+  --color-warm-gray-30: #f6f4ee;
+  --color-warm-gray-20: #f8f7f2;
+  --color-warm-gray-10: #fafaf6;
+
+  /** green variant */
+  --color-green-120: #1e483b;
+  --color-green-110: #245646;
+  --color-green-100: #2a6552;
+  --color-green-90: #30735e;
+  --color-green-80: #36826a;
+  --color-green-70: #3c9075;
+  --color-green-60: #429e81;
+  --color-green-50: #48ad8d;
+  --color-green-40: #52b797;
+  --color-green-30: #61bda0;
+  --color-green-20: #6fc3a8;
+  --color-green-10: #7dc9b1;
+
+  /** yellow variant */
+  --color-yellow-120: #996e00;
+  --color-yellow-110: #cc9200;
+  --color-yellow-100: #e6a400;
+  --color-yellow-90: #ffb700;
+  --color-yellow-80: #ffcc00;
+  --color-yellow-70: #ffd429;
+  --color-yellow-60: #ffe229;
+  --color-yellow-50: #ffe642;
+  --color-yellow-40: #ffe95c;
+  --color-yellow-30: #ffed7a;
+  --color-yellow-20: #fff4ad;
+  --color-yellow-10: #fffbe1;
+
+  /** red variant */
+  --color-red-120: #bc1a1a;
+  --color-red-110: #d21c1c;
+  --color-red-100: #df1d1d;
+  --color-red-90: #e7301d;
+  --color-red-80: #e9462b;
+  --color-red-70: #f5511d;
+  --color-red-60: #f05c2e;
+  --color-red-50: #eb683f;
+  --color-red-40: #f57046;
+  --color-red-30: #ff784d;
+  --color-red-20: #ff9d7e;
+  --color-red-10: #ffc2af;
+
+  /** blue scale */
+  --color-blue-120: #014274;
+  --color-blue-110: #014d88;
+  --color-blue-100: #01599d;
+  --color-blue-90: #0166b3;
+  --color-blue-80: #0073cb;
+  --color-blue-70: #2087d6;
+  --color-blue-60: #469fe3;
+  --color-blue-50: #6ab6f0;
+  --color-blue-40: #81bfef;
+  --color-blue-30: #98c9ef;
+  --color-blue-20: #b5d8f4;
+  --color-blue-10: #d2e7f8;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

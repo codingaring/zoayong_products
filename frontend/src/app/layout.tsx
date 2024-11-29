@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { GmarketSans } from '@styles/fonts';
+import '@styles/reset.css';
+import '@styles/globals.css';
 
 export const metadata: Metadata = {
   title: '조아용in스토어 상품 소개서',
