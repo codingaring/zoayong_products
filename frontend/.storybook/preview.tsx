@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react';
-import '@styles/globals.css';
+import '../src/styles/globals.css';
+import '../src/styles/reset.css';
 
 const preview: Preview = {
   parameters: {
@@ -13,7 +14,7 @@ const preview: Preview = {
       default: 'light',
       values: [
         { name: 'light', value: '#ffffff' },
-        { name: 'dark', value: '#242424' },
+        { name: 'dark', value: '#000000' },
       ],
     },
   },
