@@ -1,6 +1,6 @@
-import facebookIcon from 'public/assets/icons/facebook.svg';
-import instagramIcon from 'public/assets/icons/instagram.svg';
-import youtubeIcon from 'public/assets/icons/youtube.svg';
+import facebookIcon from '@/assets/icons/facebook.svg';
+import instagramIcon from '@/assets/icons/instagram.svg';
+import youtubeIcon from '@/assets/icons/youtube.svg';
 
 type SNS = {
   name: string;

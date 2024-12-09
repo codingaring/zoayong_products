@@ -1,26 +1,26 @@
-import View, { PolymorphicProps, PolymorphicRef } from '@components/View';
-import { cn } from '@utils/cn';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { ElementType, forwardRef } from 'react';
+import View, { PolymorphicProps, PolymorphicRef } from '@components/View';
+import { cn } from '@utils/cn';
 
 export const buttonVariant = cva(
   [
-    'relative px-6 py-3 rounded-full border border-solid text-white',
-    'after:content-[""] after:border after:border-solid after:inset-0 after:absolute after:min-w-full after:min-h-full after:rounded-full after:translate-x-1.5 after:translate-y-1.5 after:-z-10 after:transition-transform',
-    'hover:after:-translate-x-0 hover:after:-translate-y-0 duration-150 transition ease-in-out',
+    'relative rounded-full border border-solid px-6 py-3 text-white',
+    'after:absolute after:inset-0 after:-z-10 after:min-h-full after:min-w-full after:translate-x-1.5 after:translate-y-1.5 after:rounded-full after:border after:border-solid after:transition-transform after:content-[""]',
+    'transition duration-150 ease-in-out hover:after:-translate-x-0 hover:after:-translate-y-0',
   ],
   {
     variants: {
       variant: {
-        white: 'bg-white after:bg-white text-gray-130 border-gray-130 after:border-gray-130 active:bg-gray-30',
+        white: 'border-gray-130 bg-white text-gray-130 after:border-gray-130 after:bg-white active:bg-gray-30',
         black: 'bg-gray-130 after:bg-gray-130 active:bg-gray-150',
         primary: 'bg-green-20 after:bg-green-20 active:bg-green-40',
         secondary: 'bg-green-40 after:bg-green-40 active:bg-green-60',
       },
       size: {
-        lg: 'text-2xl px-8 py-5 font-bold',
-        md: 'text-base px-7 py-4',
-        sm: 'text-sm px-6 py-3',
+        lg: 'px-8 py-5 text-2xl font-bold',
+        md: 'px-7 py-4 text-base',
+        sm: 'px-6 py-3 text-sm',
       },
     },
     defaultVariants: {
