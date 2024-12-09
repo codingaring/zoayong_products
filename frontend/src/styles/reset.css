@@ -89,19 +89,17 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   vertical-align: baseline;
 }
 
 html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  font-family: 'GmarketSans';
+  font-size: 100%;
 }
 
 body {
   line-height: 1;
-  font-size: 1.6rem;
-  font-family: 'Gmarket Sans';
+  font-family: 'GmarketSans';
 }
 
 article,
@@ -148,10 +146,10 @@ button {
 
 textarea,
 input {
-  font-family: inherit;
   border: none;
   outline: none;
   background-color: transparent;
+  font-family: inherit;
 }
 
 img,
@@ -167,4 +165,5 @@ svg {
 a {
   all: unset;
   cursor: pointer;
+  font-family: inherit;
 }

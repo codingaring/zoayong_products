@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Gmarket Sans';
+  font-family: 'GmarketSans';
   src: url('/frontend/public/fonts/GmarketSans.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gmarket Sans';
+  font-family: 'GmarketSans';
   src: url('/frontend/public/fonts/GmarketSans.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
