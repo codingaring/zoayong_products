@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
 import searchIcon from '@assets/icons/search.svg';
-import SearchBar from '.';
+import PrimaryInput from '.';
 
 const meta = {
-  component: SearchBar,
+  component: PrimaryInput,
   parameters: {
     layout: 'centered',
   },
@@ -15,22 +15,22 @@ const meta = {
   args: {
     placeholder: '검색어를 입력해주세요.',
   },
-} satisfies Meta<typeof SearchBar>;
+} satisfies Meta<typeof PrimaryInput>;
 
 export default meta;
-type SearchBarStoryObj = StoryObj<typeof SearchBar>;
+type PrimaryInputStoryObj = StoryObj<typeof PrimaryInput>;
 
-export const Default: SearchBarStoryObj = {
+export const Default: PrimaryInputStoryObj = {
   args: {},
 };
 
-export const LeftIcon: SearchBarStoryObj = {
+export const LeftIcon: PrimaryInputStoryObj = {
   args: {
     leftIcon: searchIcon,
   },
 };
 
-export const RightIcon: SearchBarStoryObj = {
+export const RightIcon: PrimaryInputStoryObj = {
   args: {
     rightIcon: searchIcon,
   },

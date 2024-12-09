@@ -3,12 +3,12 @@ import Image from 'next/image';
 import { InputHTMLAttributes } from 'react';
 import { cn } from '@utils/cn';
 
-type SearchBarProps = {
+type PrimaryInputProps = {
   rightIcon?: string | StaticImport;
   leftIcon?: string | StaticImport;
 } & InputHTMLAttributes<HTMLInputElement>;
 
-const SearchBar = ({ className, rightIcon, leftIcon, ...props }: SearchBarProps) => {
+const PrimaryInput = ({ className, rightIcon, leftIcon, ...props }: PrimaryInputProps) => {
   return (
     <form
       className={cn(
@@ -29,4 +29,4 @@ const SearchBar = ({ className, rightIcon, leftIcon, ...props }: SearchBarProps)
   );
 };
 
-export default SearchBar;
+export default PrimaryInput;
