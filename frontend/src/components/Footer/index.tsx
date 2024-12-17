@@ -5,7 +5,7 @@ import { SNS_List } from './sns';
 
 const Footer = () => {
   return (
-    <footer className="absolute inset-x-0 bottom-0 flex min-w-full flex-col items-start justify-center gap-5 bg-gray-120 p-10 text-white">
+    <footer className="flex min-w-full flex-col items-start justify-center gap-5 bg-gray-120 p-10 text-white">
       <div className="relative hidden h-9 md:block md:w-52 lg:h-16 lg:w-60">
         <Image src={storeLogo} alt="조아용in스토어" fill={true} className="object-contain object-left" />
       </div>
