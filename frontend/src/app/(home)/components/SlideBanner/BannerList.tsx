@@ -52,6 +52,6 @@ const ThirdBanner = () => {
   return <Banner className="bg-blue-30" />;
 };
 
-const BannerList = [<FirstBanner key={1} />, <SecondBanner key={2} />, <ThirdBanner key={3} />];
+const BannerList = [<FirstBanner />, <SecondBanner />, <ThirdBanner />];
 
 export default BannerList;

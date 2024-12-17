@@ -1,11 +1,23 @@
 import { useState } from 'react';
 
-export function useBannerButton() {
-  const [selectBannerIdx, setSelectBannerIdx] = useState(0);
+export function useBannerButton(bannersLastIdx: number) {
+  const [currentIdx, setCurrentIdx] = useState(0);
 
-  const handleSetBannerIdx = (idx: number) => {
-    setSelectBannerIdx(idx);
+  const handlePrev = () => {
+    if (currentIdx > 0) {
+      setCurrentIdx(currentIdx - 1);
+    }
   };
 
-  return { selectBannerIdx, handleSetBannerIdx };
+  const handleNext = () => {
+    if (currentIdx < bannersLastIdx) {
+      setCurrentIdx(currentIdx + 1);
+    }
+  };
+
+  const handleSetIdx = (idx: number) => {
+    setCurrentIdx(idx);
+  };
+
+  return { currentIdx, handlePrev, handleNext, handleSetIdx };
 }
