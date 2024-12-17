@@ -1,6 +1,6 @@
 'use client';
-import { cn } from '@utils/cn';
 import { HTMLAttributes } from 'react';
+import { cn } from '@utils/cn';
 
 type BannerButtonProps = {
   bannerList: JSX.Element[];

@@ -3,7 +3,7 @@ import { HTMLAttributes } from 'react';
 import { cn } from '@utils/cn';
 
 const categoryVariant = cva(
-  'relative flex cursor-pointer flex-col py-3 text-xs text-white active:text-gray-70 md:text-sm lg:p-5 lg:text-base lg:py-5',
+  'relative flex cursor-pointer flex-col py-3 text-xs text-white active:text-gray-70 md:text-sm lg:p-5 lg:text-base',
   {
     variants: {
       variant: {

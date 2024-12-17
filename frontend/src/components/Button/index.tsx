@@ -6,16 +6,16 @@ import { cn } from '@utils/cn';
 export const buttonVariant = cva(
   [
     'relative isolate rounded-full border border-solid',
-    'before:absolute before:-z-10 before:inset-0 before:rounded-full before:border before:border-white before:translate-x-1.5 before:translate-y-1.5',
-    'hover:before:translate-x-0 hover:before:translate-y-0 before:transition-transform duration-150 ease-in-out',
+    'before:absolute before:inset-0 before:-z-10 before:translate-x-1.5 before:translate-y-1.5 before:rounded-full before:border before:border-white',
+    'duration-150 ease-in-out before:transition-transform hover:before:translate-x-0 hover:before:translate-y-0',
   ],
   {
     variants: {
       variant: {
         white: 'border-gray-130 bg-white text-gray-130 before:border-gray-130 before:bg-white active:bg-gray-40',
-        black: 'bg-gray-120 before:bg-gray-120 active:bg-gray-150 text-white',
-        primary: 'bg-green-20 before:bg-green-20 active:bg-green-40 text-white',
-        secondary: 'bg-green-40 before:bg-green-40 active:bg-green-60 text-white',
+        black: 'bg-gray-120 text-white before:bg-gray-120 active:bg-gray-150',
+        primary: 'bg-green-20 text-white before:bg-green-20 active:bg-green-40',
+        secondary: 'bg-green-40 text-white before:bg-green-40 active:bg-green-60',
       },
       size: {
         lg: 'px-8 py-5 text-2xl font-bold',

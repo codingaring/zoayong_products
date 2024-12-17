@@ -1,9 +1,9 @@
-import { cn } from '@utils/cn';
 import Image from 'next/image';
+import Link from 'next/link';
 import { HTMLAttributes } from 'react';
 import heroImage from '@assets/images/hero_image.webp';
 import { buttonVariant } from '@components/Button';
-import Link from 'next/link';
+import { cn } from '@utils/cn';
 
 type BannerProps = HTMLAttributes<HTMLDivElement>;
 
@@ -18,7 +18,7 @@ const Banner = ({ className, children, ...props }: BannerProps) => {
 const FirstBanner = () => {
   return (
     <Banner className="relative items-center bg-green-20 md:flex md:justify-between lg:justify-center lg:gap-56">
-      <div className="flex flex-col items-start gap-0.5 text-white md:flex-shrink-0 md:gap-3">
+      <div className="flex flex-col items-start gap-0.5 text-white md:shrink-0 md:gap-3">
         <h2 className="text-sm md:text-xl">궁금해? 궁금하면 조아용 &gt;&lt;</h2>
         <h1 className="text-2xl md:text-3xl">조아용in스토어</h1>
         <div className="flex flex-col gap-0.5 text-xs font-light md:text-sm">
@@ -52,6 +52,6 @@ const ThirdBanner = () => {
   return <Banner className="bg-blue-30" />;
 };
 
-const BannerList = [<FirstBanner />, <SecondBanner />, <ThirdBanner />];
+const BannerList = [<FirstBanner key={1} />, <SecondBanner key={2} />, <ThirdBanner key={3} />];
 
 export default BannerList;
