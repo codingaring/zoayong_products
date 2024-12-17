@@ -25,7 +25,7 @@ const BannerArrowButton = ({
       <button
         disabled={currentIdx === bannerLastIdx}
         onClick={handleNext}
-        className="absolute right-10 top-1/2 h-6 w-6 -translate-y-1/2">
+        className="absolute right-10 top-1/2 -translate-y-1/2">
         <RightIcon color={currentIdx === bannerLastIdx ? '#B7E1D3' : 'white'} width={'20'} height={'32'} />
       </button>
     </div>

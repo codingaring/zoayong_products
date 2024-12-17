@@ -1,9 +1,9 @@
 'use client';
+import { cn } from '@utils/cn';
 import { useBannerButton } from '../hooks/useBannerButton';
+import BannerArrowButton from './BannerArrowButton';
 import BannerButton from './BannerButton';
 import BannerList from './BannerList';
-import { cn } from '@utils/cn';
-import BannerArrowButton from './BannerArrowButton';
 
 const SlideBanner = () => {
   const bannerListLastIdx = BannerList.length - 1;

@@ -6,11 +6,9 @@ function debounce<T extends (...args: any[]) => any>(
   let timer: ReturnType<typeof setTimeout> | null = null;
   let called = false;
 
-  return function (this: ThisParameterType<T>, ...args: Parameters<T>): void {
-    const context = this;
-
+  return function (...args: Parameters<T>): void {
     if (leading && !called) {
-      func.apply(context, args);
+      func(...args);
       called = true;
     }
 
@@ -18,7 +16,7 @@ function debounce<T extends (...args: any[]) => any>(
 
     timer = setTimeout(() => {
       if (!leading) {
-        func.apply(context, args);
+        func(...args);
       }
       called = false;
     }, delay);
