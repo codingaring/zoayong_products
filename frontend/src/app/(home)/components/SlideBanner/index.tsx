@@ -16,7 +16,9 @@ const SlideBanner = () => {
           'hide-scrollbar relative flex h-[650px] w-full transition-transform duration-300 ease-in-out md:aspect-video',
         )}
         style={{ transform: `translateX(-${currentIdx * 100}vw)` }}>
-        {BannerList.map(banner => banner)}
+        {BannerList.map((banner, idx) => (
+          <div key={idx}>{banner}</div>
+        ))}
       </div>
       <BannerButton
         handleSetIdx={handleSetIdx}
