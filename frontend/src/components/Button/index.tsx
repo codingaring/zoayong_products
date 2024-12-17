@@ -5,7 +5,7 @@ import { cn } from '@utils/cn';
 
 export const buttonVariant = cva(
   [
-    'relative isolate z-0 rounded-full border border-solid',
+    'relative isolate rounded-full border border-solid',
     'before:absolute before:-z-10 before:inset-0 before:rounded-full before:border before:border-white before:translate-x-1.5 before:translate-y-1.5',
     'hover:before:translate-x-0 hover:before:translate-y-0 before:transition-transform duration-150 ease-in-out',
   ],
@@ -48,10 +48,3 @@ const Button = forwardRef(
 Button.displayName = 'Button';
 
 export default Button;
-
-<button
-  className={
-    'relative z-0 rounded-full border border-solid transition before:absolute before:-z-10 before:min-h-full before:min-w-full before:rounded-full before:border'
-  }>
-  버튼
-</button>;
